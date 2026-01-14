@@ -1,0 +1,199 @@
+/* -------------------------- */
+/* Grundlayout & Body */
+/* -------------------------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* -------------------------- */
+/* Top-right Button (Plus / Close) */
+/* -------------------------- */
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.2s;
+}
+
+.top-right:hover {
+    transform: scale(1.1);
+}
+
+/* Plus Button */
+#addBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+#addBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Close Button */
+#closeBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#closeBtn:hover {
+    background-color: #a71d2a;
+}
+
+/* -------------------------- */
+/* Main Container (zentriert) */
+/* -------------------------- */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------------- */
+/* Überschriften */
+/* -------------------------- */
+h1, .page-title {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* -------------------------- */
+/* Karteikarte / Card */
+/* -------------------------- */
+.card {
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.card-main-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-subtext {
+    position: absolute;
+    bottom: 15px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* -------------------------- */
+/* Textarea als Karteikarte */
+/* -------------------------- */
+.textarea-card {
+    resize: none;
+    font-size: 18px;
+    font-family: inherit;
+    text-align: center;
+    color: #333;
+}
+
+/* -------------------------- */
+/* Button Gruppen (Haken / Kreuz) */
+/* -------------------------- */
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+.action-btn {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Haken Button */
+#checkBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Kreuz Button */
+#crossBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* -------------------------- */
+/* Hinzufügen Button (Todo erstellen) */
+/* -------------------------- */
+.add-btn {
+    width: 150px;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* -------------------------- */
+/* Inputs (falls später benötigt) */
+/* -------------------------- */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 300px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
