@@ -46,7 +46,6 @@ A focused **todo app with flashcard-style UI** where you see **one item at a tim
    ```bash
    npm install
 
-
 3. Create a .env file based on the provided .env.template and edit to add your own credentials. All needed variables are listed with examples in .env.template.
 
 
