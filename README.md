@@ -1,6 +1,6 @@
-# Todo App
+# Todo Web App
 
-A focused **todo app with flashcard-style UI** where you see **one item at a time**, mark it as done, and manage your personal stack — no scattered lists. Built with **Express.js** and **[htmlrl](https://github.com/mats-hanisch/htmlrl-js)**, and featuring a **secure authentication system**, this app helps you stay organized and focused, just like using flashcards for tasks or notes.
+A focused **todo web app with flashcard-style UI** where you see **one item at a time**, mark it as done, and manage your personal stack — no scattered lists. Built with **Express.js** and **[htmlrl](https://github.com/mats-hanisch/htmlrl-js)**, and featuring a **secure authentication system**, this app helps you stay organized and focused, just like using flashcards for tasks or notes.
 
 ---
 
@@ -11,7 +11,8 @@ A focused **todo app with flashcard-style UI** where you see **one item at a tim
 - **Personal stack:** All your tasks and notes live in one place — no separate lists.
 - **Authentication:** Secure login and registration to keep your data private.
 - **Add/Edit/Delete items:** Manage your stack as you go.
-- **Responsive design:** Works on desktop and mobile.
+- **Web App:** Access your todos from everywhere at any time.
+- **Responsive design:** Looks great on desktop and mobile.
 
 ---
 
@@ -53,7 +54,7 @@ A focused **todo app with flashcard-style UI** where you see **one item at a tim
    ```bash
     node src/server.js
 
-5. Open the browser at the given link (found in the output after starting the app).
+5. Open the browser with the given link (found in the output after starting the app).
 
 ### Usage
 
