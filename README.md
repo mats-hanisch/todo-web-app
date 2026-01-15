@@ -43,7 +43,8 @@ A focused **todo app with flashcard-style UI** where you see **one item at a tim
    cd todo-web-app
 
 2. Install dependencies:
-   ```npm install
+   ```bash
+   npm install
 
 
 3. Create a .env file based on the provided .env.template and edit to add your own credentials. All needed variables are listed with examples in .env.template.
@@ -57,13 +58,13 @@ A focused **todo app with flashcard-style UI** where you see **one item at a tim
 
 ### Usage
 
------
+---
 
 1. **Register or log in** to your account.
 2. **Add tasks or notes** to your personal stack.
 3. **Tap or click** to see the next item in your stack.
 4. **Mark items as done** to keep your stack up-to-date.
-5. **Repeat.**
+5. **Repeat**.
 
 ---
 
