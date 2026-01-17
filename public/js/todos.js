@@ -41,6 +41,8 @@ function onCardDivClick() {
     cardMainText.textContent = todos[currentTodoIndex].text;
 }
 
+
+// register central click event handler
 document.addEventListener("click", async (e) => {  
     if (!e.target) {
         return;

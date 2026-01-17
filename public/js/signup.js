@@ -4,14 +4,17 @@ const loginBtn = document.getElementById("loginBtn");
 
 
 loginBtn.addEventListener("click", async () => {
+    // get email and password from input fields
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
     
     if (!email || !password) {
+        // invalid, some credentials were missing
         alert("Please enter credentials!");
         return;
     }
     
+    // send register request to server
     const res = await fetch("api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -19,6 +22,7 @@ loginBtn.addEventListener("click", async () => {
     });
     
     if (res.ok) {
+        // register successful, redirect to /todos
         window.location.href = "/todos";
     }
 });

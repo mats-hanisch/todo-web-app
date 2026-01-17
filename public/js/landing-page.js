@@ -1,11 +1,13 @@
-const signinBtn = document.getElementById('signinBtn');
-const signupBtn = document.getElementById('signupBtn');
+const signinBtn = document.getElementById("signinBtn");
+const signupBtn = document.getElementById("signupBtn");
 
-// Weiterleitung (dummy URLs)
-signinBtn.addEventListener('click', () => {
-    window.location.href = '/signin'; // Sign In Seite
+
+signinBtn.addEventListener("click", () => {
+    // redirect to /signin
+    window.location.href = "/signin";
 });
 
-signupBtn.addEventListener('click', () => {
-    window.location.href = '/signup'; // Sign Up Seite
+signupBtn.addEventListener("click", () => {
+    // redirect to /signup
+    window.location.href = "/signup";
 });
