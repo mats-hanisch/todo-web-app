@@ -9,7 +9,7 @@ export default class LandingPageController {
     landingPage = async (req, res) => {
         try {
             res.set("Content-Type", "text/html");
-            res.send(await htmlrl.renderAsync("index.html", {}));
+            res.send(await htmlrl.renderAsync("landing-page.html", {}));
         } catch(err) {
             if (err instanceof AppError) {
                 res.status(err.status).json({ error: err.message });
