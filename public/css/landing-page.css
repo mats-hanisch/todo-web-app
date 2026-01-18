@@ -1,6 +1,4 @@
-/* -------------------------- */
-/* Grundlayout */
-/* -------------------------- */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,20 +18,17 @@ body {
     box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
 
-/* Titel */
 .landing-title {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
-/* Catchy Spruch */
 .landing-catchy {
     font-size: 20px;
     margin-bottom: 40px;
     opacity: 0.9;
 }
 
-/* Buttons */
 .landing-buttons {
     display: flex;
     justify-content: center;
@@ -49,7 +44,6 @@ body {
     transition: transform 0.1s, background-color 0.2s;
 }
 
-/* Sign In */
 #signinBtn {
     background-color: #28a745;
     color: white;
@@ -60,7 +54,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Sign Up */
 #signupBtn {
     background-color: #ffc107;
     color: #333;
