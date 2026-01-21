@@ -1,0 +1,21 @@
+
+
+/* ===== Global Reset ===== */
+* {
+    box-sizing: border-box;
+}
+
+/* ===== App Body ===== */
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background-color: var(--color-bg-app);
+    font-family: var(--font-family-base);
+    color: var(--color-text-main);
+}
