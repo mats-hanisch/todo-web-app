@@ -27,7 +27,7 @@ export default class TodoController {
     
     deleteTodo = async (req, res) => {
         try {
-            const { todoId } = req.body ?? {};
+            const todoId = req.params.id;
             
             await this.todoService.deleteTodo(req.session.userId, todoId);
             
