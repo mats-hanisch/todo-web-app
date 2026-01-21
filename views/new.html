@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add To-Do | To-Do App</title>
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/todos-shared.css">
     <link rel="stylesheet" href="css/new.css">
 </head>
 <body>
-    <button id="closeBtn" class="top-right">✖</button>
-
-    <div class="main-container">
-        <h1 class="page-title">Add new To-Do</h1>
+    <button class="top-action danger" id="closeBtn">✖</button>
+    
+    <main class="screen">
+        <div class="card">
+            <textarea
+                class="card-content editable"
+                id="todoInput"
+                placeholder="Enter to-do..."
+            ></textarea>
+        </div>
         
-        <textarea id="todoInput" class="card textarea-card" placeholder="Enter to-do ..."></textarea>
-        
-        <button id="addTodoBtn" class="add-btn">Add</button>
-    </div>
-
+        <div class="actions">
+            <button class="action-btn primary" id="addTodoBtn">Add</button>
+        </div>
+    </main>
+    
     <script src="js/new.js"></script>
 </body>
 </html>

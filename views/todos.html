@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My To-Dos | To-Do App </title>
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/todos-shared.css">
     <link rel="stylesheet" href="css/todos.css">
 </head>
 <body data-todos="@todos">
-    <button id="addBtn" class="top-right">+</button>
+    <button class="top-action primary" id="addBtn">+</button>
     
-    <div class="main-container">
-        <div class="card" id="cardDiv">
-            <div class="card-main-text">@topTodoText</div>
+    <main class="screen">
+        <div class="card">
+            <div class="card-content">
+                @topTodoText
+            </div>
         </div>
         
-        <div class="button-group">
-            <button id="doneBtn" type="button">✅</button>
+        <div class="actions">
+            <button class="action-btn success" id="doneBtn">✅</button>
         </div>
-    </div>
+    </main>
     
     <script src="js/todos.js"></script>
 </body>
