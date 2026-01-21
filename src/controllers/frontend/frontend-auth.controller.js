@@ -9,7 +9,12 @@ export default class FrontendAuthController {
     signup = async (req, res) => {
         try {
             res.set("Content-Type", "text/html");
-            res.send(await htmlrl.renderAsync("signup.html", {}));
+            res.send(await htmlrl.renderAsync("auth.html", {
+                title: "Sign Up",
+                action: "Create Account",
+                formFooterUrl: "/signin",
+                formFooterText: "Already have an account? Sign in"
+            }));
         }
         catch (err) {
             if (err instanceof AppError) {
@@ -24,7 +29,12 @@ export default class FrontendAuthController {
     signin = async (req, res) => {
         try {
             res.set("Content-Type", "text/html");
-            res.send(await htmlrl.renderAsync("signin.html", {}));
+            res.send(await htmlrl.renderAsync("auth.html", {
+                title: "Sign In",
+                action: "Sign in",
+                formFooterUrl: "/signup",
+                formFooterText: "No account yet? Sign up for free"
+            }));
         }
         catch (err) {
             if (err instanceof AppError) {
