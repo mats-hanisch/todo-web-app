@@ -1,4 +1,4 @@
-const cardMainText = document.querySelector(".card-main-text");
+const cardMainText = document.querySelector(".card");
 
 
 const todos = JSON.parse(document.body.dataset.todos);
@@ -14,10 +14,12 @@ function onAddBtnClick() {
 }
 
 async function onDoneBtnClick() {
-    await fetch("/api/todos/todo", {
-        method: "DELETE",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ todoId: todos[currentTodoIndex].id })
+    // get id of current top todo
+    const todoId = todos[currentTodoIndex].id;
+    
+    // delete top todo
+    await fetch(`/api/todos/${todoId}`, {
+        method: "DELETE"
     });
     
     // reload site to show changes

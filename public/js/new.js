@@ -24,7 +24,7 @@ addTodoBtn.addEventListener("click", async () => {
     }
     
     // post todo
-    const res = await fetch("api/todos/todo", {
+    const res = await fetch("api/todos/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: todoText })
