@@ -1,4 +1,4 @@
-const cardMainText = document.querySelector(".card");
+const cardMainText = document.querySelector(".card-content");
 
 
 const todos = JSON.parse(document.body.dataset.todos);
