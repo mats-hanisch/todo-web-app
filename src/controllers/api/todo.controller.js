@@ -34,7 +34,6 @@ export default class TodoController {
             return res.sendStatus(204);
         }
         catch (err) {
-            console.log(err);
             if (err instanceof AppError) {
                 res.status(err.status).json({ error: err.message });
             }

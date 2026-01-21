@@ -9,7 +9,6 @@ export default class AuthService {
     }
     
     register = async (email, password) => {
-        console.log(email, password);
         if (!email || !password) {
             throw new MissingCredentialsError();
         }
@@ -33,7 +32,6 @@ export default class AuthService {
     }
     
     login = async (email, password) => {
-        console.log(email, password);
         if (!email || !password) {
             throw new MissingCredentialsError();
         }

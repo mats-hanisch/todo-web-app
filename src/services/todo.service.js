@@ -5,7 +5,6 @@ export default class TodoService {
     }
     
     createNewTodo = async (userId, text) => {
-        console.log(userId, text);
         await this.todoRepo.create(userId, text);
     }
     
