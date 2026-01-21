@@ -28,6 +28,7 @@ async function onDoneBtnClick() {
 
 function onCardDivClick() {
     if (todos.length === 0) {
+        // no cards yet - let user create some
         redirectToTodoAddSite();
     }
     
