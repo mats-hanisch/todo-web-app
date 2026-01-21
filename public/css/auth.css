@@ -1,0 +1,72 @@
+
+.login-container {
+    background-color: var(--color-card-bg);
+    padding: 40px 30px;
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: var(--color-text-main);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: var(--font-weight-card);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-text-invert);
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.form-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-footer a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}

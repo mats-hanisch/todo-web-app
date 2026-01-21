@@ -1,0 +1,38 @@
+:root {
+    /* colors */
+    --color-bg-app: #f4f6f8;
+    --color-card-bg: #ffffff;
+
+    --color-primary: #007bff;
+    --color-primary-hover: #0056b3;
+
+    --color-success: #28a745;
+    --color-success-hover: #20853b;
+    
+    --color-danger: #dc3545;
+
+    --color-text-main: #222;
+    --color-text-muted: #666;
+    --color-text-invert: #ffffff;
+
+    /* typography */
+    --font-family-base: Arial, sans-serif;
+
+    --font-size-card: 24px;
+    --font-size-card-edit: 18px;
+    --font-size-button: 22px;
+
+    --font-weight-card: 700;
+    --font-weight-normal: 400;
+
+    /* layout */
+    --radius-card: 12px;
+    --radius-pill: 40px;
+    --radius-circle: 50%;
+
+    --shadow-card: 0 6px 20px rgba(0,0,0,0.15);
+    --shadow-float: 0 4px 10px rgba(0,0,0,0.2);
+
+    --spacing-card-padding: 20px;
+    --spacing-card-bottom: 30px;
+}
