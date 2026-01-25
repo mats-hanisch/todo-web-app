@@ -52,7 +52,7 @@ A focused **todo web app with flashcard-style UI** where you see **one item at a
 
 4. Start the server:
    ```bash
-    node src/server.js
+   npm start
 
 5. Open the browser with the given link (found in the output after starting the app).
 
